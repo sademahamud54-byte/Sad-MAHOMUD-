@@ -1,0 +1,6 @@
+{
+  "name": "Universal Telegram Mini App",
+  "description": "Production-ready Telegram Mini App template with Tap-to-Earn, Energy, Mining, Referrals, Ads, Admin Panel, and Firebase backend.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

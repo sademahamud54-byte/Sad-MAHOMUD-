@@ -1,0 +1,57 @@
+services:
+  - type: web
+    name: sm-dove-sparrow
+    runtime: node
+    plan: free
+    buildCommand: npm install --legacy-peer-deps && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 22.12.0
+      - key: NODE_ENV
+        value: production
+      - key: APP_NAME
+        value: SM DOVE SPARROW
+      - key: BOT_NAME
+        value: SM DOVE SPARROW 🕊️
+      - key: BOT_USERNAME
+        value: SMDOVESPARROW_bot
+      - key: PORT
+        value: 10000
+      - key: FIREBASE_PROJECT_ID
+        value: sm-dove-sparrow-f041c
+      - key: FIREBASE_DATABASE_URL
+        value: https://sm-dove-sparrow-f041c-default-rtdb.firebaseio.com
+      - key: ADMIN_TELEGRAM_ID
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: WEB_APP_URL
+        sync: false
+      - key: FIREBASE_SERVICE_ACCOUNT
+        sync: false
+      - key: ADMIN_USERNAME
+        sync: false
+      - key: ADMIN_PHONE
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: MONETAG_ZONE_1
+        value: "11924593"
+      - key: MONETAG_ZONE_2
+        value: "11924529"
+      - key: MONETAG_ZONE_3
+        value: "11924571"
+      - key: MONETAG_ZONE_4
+        value: "11949016"
+      - key: REFERRAL_BONUS
+        value: "2500"
+      - key: WELCOME_BONUS
+        value: "1000"
+      - key: REWARD_PER_AD
+        value: "1000"
+      - key: MAX_REWARDED_ADS_PER_DAY
+        value: "20"
+      - key: AD_COOLDOWN_SECONDS
+        value: "30"
