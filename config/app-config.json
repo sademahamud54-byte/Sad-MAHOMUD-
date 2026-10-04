@@ -1,0 +1,48 @@
+{
+  "app": {
+    "name": "SM DOVE SPARROW",
+    "version": "1.0.0",
+    "description": "SM DOVE SPARROW 🕊️ — Official Telegram Mini App with Tap-to-Earn, Energy, Mining, Referrals, Monetag Ads, and Firebase Backend."
+  },
+  "telegram": {
+    "botName": "SM DOVE SPARROW 🕊️",
+    "botUsername": "SMDOVESPARROW_bot",
+    "botToken": "YOUR_NEW_BOT_TOKEN",
+    "webAppUrl": "https://YOUR-RENDER-URL.onrender.com"
+  },
+  "admin": {
+    "telegramId": "8801424830",
+    "username": "@sadimahomud247",
+    "phone": "01915921501",
+    "email": "YOUR_ADMIN_EMAIL"
+  },
+  "firebase": {
+    "projectId": "sm-dove-sparrow-f041c",
+    "databaseUrl": "https://sm-dove-sparrow-f041c-default-rtdb.firebaseio.com",
+    "serviceAccount": "YOUR_FIREBASE_SERVICE_ACCOUNT_JSON"
+  },
+  "game": {
+    "welcomeBonus": 1000,
+    "referralBonus": 2500,
+    "baseTapReward": 1,
+    "baseEnergyCost": 1,
+    "baseMaxEnergy": 1000,
+    "baseRechargeRate": 3,
+    "baseMiningRatePerHour": 50,
+    "dailyRewards": [500, 1000, 2000, 5000, 10000, 20000, 50000]
+  },
+  "monetag": {
+    "zone1": "11924593",
+    "zone2": "11924529",
+    "zone3": "11924571",
+    "zone4": "11949016",
+    "rewardPerAd": 1000,
+    "maxRewardedAdsPerDay": 20,
+    "adCooldownSeconds": 30
+  },
+  "security": {
+    "maxTapsPerBatch": 100,
+    "tapRateLimitPerSec": 25,
+    "antiCheatEnabled": true
+  }
+}
